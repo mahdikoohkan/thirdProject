@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: snow;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logoInHeader {
+    width: 40vw;
+}
+
+nav {
+    background: radial-gradient(aqua, blue);
+    display: flex;
+    justify-content: center;
+    transition: all ease .4s;
+    padding: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin: 0px 30px 0px 30px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 360px;
+    transition: all ease .4s;
+
+}
+
+nav:hover {
+    border: none;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: black;
+    padding: 0px 13px 0px 13px;
+}
+/* -----------------==========------------ */
+.mainContainer{
+    display: flex;
+}
+aside{
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    margin-right: 20px;
+    background-color: #cccc;
+    padding-top: 20px;
+}
+h2{
+    font-size: 2.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+aside ul{
+    list-style-type: circle;
+}
+aside ul li{
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+aside ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.content{
+    width: 200%;
+    padding-top: 15px;
+}
+h1{
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.imgIncontent{
+    width: 70%;
+}
+p{
+    font-size: 2.2vw;
+    display: inline-block;
+}
+.pBox{
+}
+
+.footer{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 1px;
+    width: auto;
+}
+.pInFooter{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: snow;
+}
+@media screen and (max-width:468px){
+    nav {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2.3;
+    }
+
+    nav a:hover {
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+    }
+    nav a{
+        transition: none;
+    }
+    .mainContainer{
+        flex-direction: column-reverse;
+    }
+    .pBox{
+        width: 250px;
+        padding-left: 10%;
+    }
+    .content{
+        padding-left: 10px;
+    }
+    .imgInContent{
+        margin-left: 10%;
+    }
+    h1{
+        margin-left: 20%;
+    }
+    .imgIncontent{
+        width: 30%;
+    }
+    
+}
